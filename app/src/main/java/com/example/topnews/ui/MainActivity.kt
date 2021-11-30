@@ -27,15 +27,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-
-//        val navHostFragment =
-//            supportFragmentManager.beginTransaction().add(ListFragment::class.java, null,null).commit()
-//        val navController: NavController
-//        navController = navHostFragment.findNavController()
-//
-//        setupActionBarWithNavController(navController)
     }
 
 
