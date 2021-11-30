@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TopNews</string>
+    <string name="button_retry">Retry</string>
+    <string name="not_loaded">Results could not be loaded</string>
+    <string name="not_loaded_footer">Failed to fetch next page. Press "Retry" button to try again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

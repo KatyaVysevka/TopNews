@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\footer.xml",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\footer.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail.xml",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item.xml",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\item.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_list.xml",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\fragment_list.xml"
+    }
+]
