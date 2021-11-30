@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-//        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.getDefaultNightMode()) setTheme(R.style.Theme_TopNews_Dark)
-//        else setTheme(R.style.Theme_TopNews_Light)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

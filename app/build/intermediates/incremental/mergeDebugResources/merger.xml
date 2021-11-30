@@ -7742,6 +7742,8 @@
         
         <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
         
+
+
     </style></file><file path="F:\java\projects\TopNews\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Theme.TopNews" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>
@@ -7752,8 +7754,9 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns2:targetApi="l">?attr/colorOnPrimary</item>
         
+
     </style></file><file name="fragment_detail" path="F:\java\projects\TopNews\app\src\main\res\layout\fragment_detail.xml" qualifiers="" type="layout"/><file name="ic_baseline_settings_24" path="F:\java\projects\TopNews\app\src\main\res\drawable\ic_baseline_settings_24.xml" qualifiers="" type="drawable"/><file name="settings_menu" path="F:\java\projects\TopNews\app\src\main\res\menu\settings_menu.xml" qualifiers="" type="menu"/><file path="F:\java\projects\TopNews\app\src\main\res\values\attr.xml" qualifiers=""><declare-styleable name="dark_theme">
         <attr format="color" name="android:textColor"/>
     </declare-styleable></file></source><source path="F:\java\projects\TopNews\app\build\generated\res\rs\debug"/><source path="F:\java\projects\TopNews\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\java\projects\TopNews\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\java\projects\TopNews\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
