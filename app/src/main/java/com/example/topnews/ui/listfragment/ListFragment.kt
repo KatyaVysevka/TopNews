@@ -4,7 +4,9 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
@@ -17,6 +19,7 @@ import com.example.topnews.common.logDebug
 import com.example.topnews.databinding.FragmentListBinding
 import com.example.topnews.domain.data.News
 import com.example.topnews.domain.data.Results
+import com.google.android.material.chip.Chip
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
@@ -54,11 +57,19 @@ class ListFragment : Fragment(), NewsListAdapter.OnItemClickListener {
             buttonRetry.setOnClickListener {
                 adapter.retry()
             }
+            chipGroup.setOnCheckedChangeListener { _, checkedId ->
+                val checkedId = chipGroup.checkedChipId
+                var chosenChip: Chip? = null
+                chipGroup.forEach { if (it.id == checkedId) chosenChip = it as Chip }
+                val section = chosenChip?.text.toString()
+                logDebug("section $section")
+                recyclerView.scrollToPosition(0)
+                viewModel.choseSection(section)
+            }
         }
 
         adapter.addLoadStateListener { loadState ->
             binding.apply {
-                logDebug("load state in fragment ${loadState}")
                 progressBar.isVisible = loadState.refresh is LoadState.Loading
                 recyclerView.isVisible = loadState.refresh is LoadState.NotLoading
                 buttonRetry.isVisible = loadState.refresh is LoadState.Error

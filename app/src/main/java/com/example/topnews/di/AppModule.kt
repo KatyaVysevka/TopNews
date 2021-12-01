@@ -18,16 +18,11 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
- //   @Provides
     @Singleton
     fun httpLoggingInterceptor(): HttpLoggingInterceptor {
-        Log.d("TAGG", "interceptor")
         return HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
     }
-//    fun httpLoggingInterceptor(): HttpLoggingInterceptor =
-//        if (BuildConfig.DEBUG) {
-//            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-//        } else HttpLoggingInterceptor()
+
 
     val client: OkHttpClient = OkHttpClient.Builder()
         .addInterceptor(httpLoggingInterceptor())

@@ -464,6 +464,8 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
     }
 
     private static final class ViewModelCImpl extends NewsApplication_HiltComponents.ViewModelC {
+      private final SavedStateHandle savedStateHandle;
+
       private final DaggerNewsApplication_HiltComponents_SingletonC singletonC;
 
       private final ActivityRetainedCImpl activityRetainedCImpl;
@@ -476,12 +478,12 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
           ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam) {
         this.singletonC = singletonC;
         this.activityRetainedCImpl = activityRetainedCImpl;
-
+        this.savedStateHandle = savedStateHandleParam;
 
       }
 
       private ListViewModel listViewModel() {
-        return new ListViewModel(singletonC.newsRepository());
+        return new ListViewModel(singletonC.newsRepository(), savedStateHandle);
       }
 
       private Provider<ListViewModel> listViewModelProvider() {

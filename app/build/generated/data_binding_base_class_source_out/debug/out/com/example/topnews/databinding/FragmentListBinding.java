@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.topnews.R;
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,7 +26,22 @@ public final class FragmentListBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Chip books;
+
+  @NonNull
+  public final Chip business;
+
+  @NonNull
   public final Button buttonRetry;
+
+  @NonNull
+  public final ChipGroup chipGroup;
+
+  @NonNull
+  public final Chip health;
+
+  @NonNull
+  public final Chip movies;
 
   @NonNull
   public final ProgressBar progressBar;
@@ -32,16 +50,35 @@ public final class FragmentListBinding implements ViewBinding {
   public final RecyclerView recyclerView;
 
   @NonNull
+  public final HorizontalScrollView scroll;
+
+  @NonNull
+  public final Chip technology;
+
+  @NonNull
   public final TextView textViewError;
 
-  private FragmentListBinding(@NonNull RelativeLayout rootView, @NonNull Button buttonRetry,
-      @NonNull ProgressBar progressBar, @NonNull RecyclerView recyclerView,
-      @NonNull TextView textViewError) {
+  @NonNull
+  public final Chip travel;
+
+  private FragmentListBinding(@NonNull RelativeLayout rootView, @NonNull Chip books,
+      @NonNull Chip business, @NonNull Button buttonRetry, @NonNull ChipGroup chipGroup,
+      @NonNull Chip health, @NonNull Chip movies, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView recyclerView, @NonNull HorizontalScrollView scroll,
+      @NonNull Chip technology, @NonNull TextView textViewError, @NonNull Chip travel) {
     this.rootView = rootView;
+    this.books = books;
+    this.business = business;
     this.buttonRetry = buttonRetry;
+    this.chipGroup = chipGroup;
+    this.health = health;
+    this.movies = movies;
     this.progressBar = progressBar;
     this.recyclerView = recyclerView;
+    this.scroll = scroll;
+    this.technology = technology;
     this.textViewError = textViewError;
+    this.travel = travel;
   }
 
   @Override
@@ -71,9 +108,39 @@ public final class FragmentListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.books;
+      Chip books = ViewBindings.findChildViewById(rootView, id);
+      if (books == null) {
+        break missingId;
+      }
+
+      id = R.id.business;
+      Chip business = ViewBindings.findChildViewById(rootView, id);
+      if (business == null) {
+        break missingId;
+      }
+
       id = R.id.button_retry;
       Button buttonRetry = ViewBindings.findChildViewById(rootView, id);
       if (buttonRetry == null) {
+        break missingId;
+      }
+
+      id = R.id.chipGroup;
+      ChipGroup chipGroup = ViewBindings.findChildViewById(rootView, id);
+      if (chipGroup == null) {
+        break missingId;
+      }
+
+      id = R.id.health;
+      Chip health = ViewBindings.findChildViewById(rootView, id);
+      if (health == null) {
+        break missingId;
+      }
+
+      id = R.id.movies;
+      Chip movies = ViewBindings.findChildViewById(rootView, id);
+      if (movies == null) {
         break missingId;
       }
 
@@ -89,14 +156,33 @@ public final class FragmentListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scroll;
+      HorizontalScrollView scroll = ViewBindings.findChildViewById(rootView, id);
+      if (scroll == null) {
+        break missingId;
+      }
+
+      id = R.id.technology;
+      Chip technology = ViewBindings.findChildViewById(rootView, id);
+      if (technology == null) {
+        break missingId;
+      }
+
       id = R.id.text_view_error;
       TextView textViewError = ViewBindings.findChildViewById(rootView, id);
       if (textViewError == null) {
         break missingId;
       }
 
-      return new FragmentListBinding((RelativeLayout) rootView, buttonRetry, progressBar,
-          recyclerView, textViewError);
+      id = R.id.travel;
+      Chip travel = ViewBindings.findChildViewById(rootView, id);
+      if (travel == null) {
+        break missingId;
+      }
+
+      return new FragmentListBinding((RelativeLayout) rootView, books, business, buttonRetry,
+          chipGroup, health, movies, progressBar, recyclerView, scroll, technology, textViewError,
+          travel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

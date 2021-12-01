@@ -12,7 +12,7 @@ import java.io.IOException
 private const val STARTING_PAGE_INDEX = 1
 private const val NEWS_SECTION = "home"
 
-class NewsPagingSource(private val newsApi: NewsApi) : PagingSource<Int, Results>() {
+class NewsPagingSource(private val newsApi: NewsApi, private val section: String) : PagingSource<Int, Results>() {
     override fun getRefreshKey(state: PagingState<Int, Results>): Int? {
         return null
     }
@@ -21,7 +21,7 @@ class NewsPagingSource(private val newsApi: NewsApi) : PagingSource<Int, Results
         val position = params.key ?: STARTING_PAGE_INDEX
 
         return try {
-            val news = newsApi.getNewsApi(NEWS_SECTION)
+            val news = newsApi.getNewsApi(section)
             Log.d("MyLog", news.toString())
             LoadResult.Page(
                 data = news.results,

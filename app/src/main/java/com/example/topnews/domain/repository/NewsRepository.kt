@@ -11,7 +11,7 @@ import javax.inject.Singleton
 @Singleton
 class NewsRepository @Inject constructor(private val newsApi: NewsApi){
 
-    fun getResults() =
+    fun getResults(section: String) =
         Pager(
             config = PagingConfig(
                 initialLoadSize = 20,
@@ -19,6 +19,6 @@ class NewsRepository @Inject constructor(private val newsApi: NewsApi){
                 maxSize = 50,
                 enablePlaceholders = false
             ),
-            pagingSourceFactory = { NewsPagingSource(newsApi) }
+            pagingSourceFactory = { NewsPagingSource(newsApi, section) }
         ).liveData
 }

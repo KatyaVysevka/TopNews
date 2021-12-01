@@ -1,11 +1,11 @@
 com/example/topnews/domain/repository/NewsRepository_Factory.java
  com.example.topnews.domain.repository.NewsRepository_Factory
-com/example/topnews/databinding/FragmentDetailBinding.java
- com.example.topnews.databinding.FragmentDetailBinding
+hilt_aggregated_deps/_com_example_topnews_ui_MainActivity_GeneratedInjector.java
+ hilt_aggregated_deps._com_example_topnews_ui_MainActivity_GeneratedInjector
 dagger/hilt/internal/aggregatedroot/codegen/_com_example_topnews_NewsApplication.java
  dagger.hilt.internal.aggregatedroot.codegen._com_example_topnews_NewsApplication
-com/example/topnews/databinding/ActivityMainBinding.java
- com.example.topnews.databinding.ActivityMainBinding
+com/example/topnews/ui/MainActivity_GeneratedInjector.java
+ com.example.topnews.ui.MainActivity_GeneratedInjector
 com/example/topnews/Hilt_NewsApplication.java
  com.example.topnews.Hilt_NewsApplication
  com.example.topnews.Hilt_NewsApplication$1
@@ -13,8 +13,9 @@ com/example/topnews/ui/listfragment/ListViewModel_Factory.java
  com.example.topnews.ui.listfragment.ListViewModel_Factory
 dagger/hilt/internal/processedrootsentinel/codegen/_com_example_topnews_NewsApplication.java
  dagger.hilt.internal.processedrootsentinel.codegen._com_example_topnews_NewsApplication
-com/example/topnews/databinding/FooterBinding.java
- com.example.topnews.databinding.FooterBinding
+com/example/topnews/ui/listfragment/ListViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.example.topnews.ui.listfragment.ListViewModel_HiltModules_KeyModule_ProvideFactory
+ com.example.topnews.ui.listfragment.ListViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
 hilt_aggregated_deps/_com_example_topnews_di_AppModule.java
  hilt_aggregated_deps._com_example_topnews_di_AppModule
 com/example/topnews/ui/listfragment/ListViewModel_HiltModules.java
@@ -33,27 +34,14 @@ com/example/topnews/di/AppModule_ProvideRetrofitFactory.java
  com.example.topnews.di.AppModule_ProvideRetrofitFactory$InstanceHolder
 hilt_aggregated_deps/_com_example_topnews_ui_listfragment_ListViewModel_HiltModules_KeyModule.java
  hilt_aggregated_deps._com_example_topnews_ui_listfragment_ListViewModel_HiltModules_KeyModule
-com/example/topnews/databinding/ItemBinding.java
- com.example.topnews.databinding.ItemBinding
+com/example/topnews/BuildConfig.java
+ com.example.topnews.BuildConfig
 hilt_aggregated_deps/_com_example_topnews_NewsApplication_GeneratedInjector.java
  hilt_aggregated_deps._com_example_topnews_NewsApplication_GeneratedInjector
 com/example/topnews/NewsApplication_GeneratedInjector.java
  com.example.topnews.NewsApplication_GeneratedInjector
 hilt_aggregated_deps/_com_example_topnews_ui_listfragment_ListViewModel_HiltModules_BindsModule.java
  hilt_aggregated_deps._com_example_topnews_ui_listfragment_ListViewModel_HiltModules_BindsModule
-com/example/topnews/ui/MainActivity_GeneratedInjector.java
- com.example.topnews.ui.MainActivity_GeneratedInjector
-com/example/topnews/BuildConfig.java
- com.example.topnews.BuildConfig
-com/example/topnews/databinding/FragmentListBinding.java
- com.example.topnews.databinding.FragmentListBinding
-com/example/topnews/NewsApplication_ComponentTreeDeps.java
- com.example.topnews.NewsApplication_ComponentTreeDeps
-com/example/topnews/ui/listfragment/ListViewModel_HiltModules_KeyModule_ProvideFactory.java
- com.example.topnews.ui.listfragment.ListViewModel_HiltModules_KeyModule_ProvideFactory
- com.example.topnews.ui.listfragment.ListViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder
-hilt_aggregated_deps/_com_example_topnews_ui_MainActivity_GeneratedInjector.java
- hilt_aggregated_deps._com_example_topnews_ui_MainActivity_GeneratedInjector
 com/example/topnews/DaggerNewsApplication_HiltComponents_SingletonC.java
  com.example.topnews.DaggerNewsApplication_HiltComponents_SingletonC
  com.example.topnews.DaggerNewsApplication_HiltComponents_SingletonC$1
@@ -73,8 +61,20 @@ com/example/topnews/DaggerNewsApplication_HiltComponents_SingletonC.java
  com.example.topnews.DaggerNewsApplication_HiltComponents_SingletonC$Builder
  com.example.topnews.DaggerNewsApplication_HiltComponents_SingletonC$ServiceCBuilder
  com.example.topnews.DaggerNewsApplication_HiltComponents_SingletonC$ServiceCImpl
+com/example/topnews/databinding/FooterBinding.java
+ com.example.topnews.databinding.FooterBinding
+com/example/topnews/ui/listfragment/Hilt_ListFragment.java
+ com.example.topnews.ui.listfragment.Hilt_ListFragment
+com/example/topnews/databinding/FragmentDetailBinding.java
+ com.example.topnews.databinding.FragmentDetailBinding
+com/example/topnews/databinding/ActivityMainBinding.java
+ com.example.topnews.databinding.ActivityMainBinding
+com/example/topnews/NewsApplication_ComponentTreeDeps.java
+ com.example.topnews.NewsApplication_ComponentTreeDeps
 com/example/topnews/ui/listfragment/ListFragment_GeneratedInjector.java
  com.example.topnews.ui.listfragment.ListFragment_GeneratedInjector
+com/example/topnews/databinding/ItemBinding.java
+ com.example.topnews.databinding.ItemBinding
 com/example/topnews/NewsApplication_HiltComponents.java
  com.example.topnews.NewsApplication_HiltComponents
  com.example.topnews.NewsApplication_HiltComponents$ActivityC
@@ -99,5 +99,5 @@ com/example/topnews/NewsApplication_HiltComponents.java
  com.example.topnews.NewsApplication_HiltComponents$ViewWithFragmentC
  com.example.topnews.NewsApplication_HiltComponents$ViewWithFragmentC$Builder
  com.example.topnews.NewsApplication_HiltComponents$ViewWithFragmentCBuilderModule
-com/example/topnews/ui/listfragment/Hilt_ListFragment.java
- com.example.topnews.ui.listfragment.Hilt_ListFragment
+com/example/topnews/databinding/FragmentListBinding.java
+ com.example.topnews.databinding.FragmentListBinding
