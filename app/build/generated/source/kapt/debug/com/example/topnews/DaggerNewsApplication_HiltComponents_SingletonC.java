@@ -239,7 +239,7 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
       }
 
       @Override
-      public void injectMainActivity(MainActivity arg0) {
+      public void injectMainActivity(MainActivity mainActivity) {
       }
 
       @Override
@@ -316,7 +316,7 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
         }
 
         @Override
-        public void injectListFragment(ListFragment listFragment) {
+        public void injectListFragment(ListFragment arg0) {
         }
 
         @Override

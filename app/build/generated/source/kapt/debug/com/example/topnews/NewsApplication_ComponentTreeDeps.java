@@ -78,10 +78,10 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
         _com_example_topnews_di_AppModule.class,
         _com_example_topnews_NewsApplication_GeneratedInjector.class,
+        _com_example_topnews_ui_listfragment_ListFragment_GeneratedInjector.class,
         _com_example_topnews_ui_listfragment_ListViewModel_HiltModules_BindsModule.class,
         _com_example_topnews_ui_listfragment_ListViewModel_HiltModules_KeyModule.class,
-        _com_example_topnews_ui_MainActivity_GeneratedInjector.class,
-        _com_example_topnews_ui_listfragment_ListFragment_GeneratedInjector.class
+        _com_example_topnews_ui_MainActivity_GeneratedInjector.class
     }
 )
 class NewsApplication_ComponentTreeDeps {

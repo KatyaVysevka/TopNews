@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
@@ -81,8 +82,7 @@ class DetailFragment : Fragment() {
             }
         }
 
-        // add menu
-      //  setHasOptionsMenu(true)
+
     }
 
 

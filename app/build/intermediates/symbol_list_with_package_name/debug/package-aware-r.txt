@@ -1179,6 +1179,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_logo_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1267,6 +1268,9 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color primaryColor
+color primaryDarkColor
+color primaryLightColor
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1833,6 +1837,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable logo
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1930,6 +1935,7 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_detailFragment_to_listFragment
 id action_divider
 id action_image
 id action_listFragment_to_detailFragment
@@ -2548,8 +2554,9 @@ menu bottom_menu
 menu example_menu
 menu example_menu2
 menu settings_menu
-mipmap ic_launcher
-mipmap ic_launcher_round
+mipmap ic_logo
+mipmap ic_logo_foreground
+mipmap ic_logo_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

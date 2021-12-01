@@ -50,11 +50,9 @@ class NewsListAdapter (private val listener: OnItemClickListener) : PagingDataAd
                     .into(imageNews)
 
                 val date = results.publishedDate?.substringBefore("T")
-                val time = results.publishedDate?.substringAfter("T")
-                val timeTask = time?.substringBefore("-")
 
                 textHeadline.text = results.title
-                textDate.text = date + " " + timeTask
+                textDate.text = date
 
             }
         }

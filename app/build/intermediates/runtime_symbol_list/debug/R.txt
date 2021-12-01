@@ -1178,6 +1178,7 @@ int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
 int color highlighted_text_material_dark 0x7f05005d
 int color highlighted_text_material_light 0x7f05005e
+int color ic_logo_background 0x7f0500d9
 int color material_blue_grey_800 0x7f05005f
 int color material_blue_grey_900 0x7f050060
 int color material_blue_grey_950 0x7f050061
@@ -1266,6 +1267,9 @@ int color mtrl_textinput_hovered_box_stroke_color 0x7f0500b3
 int color notification_action_color_filter 0x7f0500b4
 int color notification_icon_bg_color 0x7f0500b5
 int color notification_material_background_media_default_color 0x7f0500b6
+int color primaryColor 0x7f0500d6
+int color primaryDarkColor 0x7f0500d7
+int color primaryLightColor 0x7f0500d8
 int color primary_dark_material_dark 0x7f0500b7
 int color primary_dark_material_light 0x7f0500b8
 int color primary_material_dark 0x7f0500b9
@@ -1832,6 +1836,7 @@ int drawable ic_mtrl_checked_circle 0x7f07006f
 int drawable ic_mtrl_chip_checked_black 0x7f070070
 int drawable ic_mtrl_chip_checked_circle 0x7f070071
 int drawable ic_mtrl_chip_close_circle 0x7f070072
+int drawable logo 0x7f070097
 int drawable material_cursor_drawable 0x7f070073
 int drawable material_ic_calendar_black_24dp 0x7f070074
 int drawable material_ic_clear_black_24dp 0x7f070075
@@ -1929,6 +1934,7 @@ int id action_bar_subtitle 0x7f080039
 int id action_bar_title 0x7f08003a
 int id action_container 0x7f08003b
 int id action_context_bar 0x7f08003c
+int id action_detailFragment_to_listFragment 0x7f0801fd
 int id action_divider 0x7f08003d
 int id action_image 0x7f08003e
 int id action_listFragment_to_detailFragment 0x7f08003f
@@ -2547,8 +2553,9 @@ int menu bottom_menu 0x7f0c0000
 int menu example_menu 0x7f0c0001
 int menu example_menu2 0x7f0c0002
 int menu settings_menu 0x7f0c0003
-int mipmap ic_launcher 0x7f0d0000
-int mipmap ic_launcher_round 0x7f0d0001
+int mipmap ic_logo 0x7f0d0002
+int mipmap ic_logo_foreground 0x7f0d0003
+int mipmap ic_logo_round 0x7f0d0004
 int navigation nav_graph 0x7f0e0000
 int plurals mtrl_badge_content_description 0x7f0f0000
 int string abc_action_bar_home_description 0x7f100000
