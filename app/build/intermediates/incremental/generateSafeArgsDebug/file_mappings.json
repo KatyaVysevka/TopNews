@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.example.topnews.ui.listfragment.ListFragmentDirections","com.example.topnews.ui.detail.DetailFragmentDirections","com.example.topnews.ui.detail.DetailFragmentArgs"]}]
+[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.example.topnews.ui.listfragment.ListFragmentDirections","com.example.topnews.ui.detail.DetailFragmentDirections","com.example.topnews.ui.detail.DetailFragmentArgs","com.example.topnews.ui.settings.SettingsFragmentDirections"]}]

@@ -239,7 +239,7 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
       }
 
       @Override
-      public void injectMainActivity(MainActivity mainActivity) {
+      public void injectMainActivity(MainActivity arg0) {
       }
 
       @Override

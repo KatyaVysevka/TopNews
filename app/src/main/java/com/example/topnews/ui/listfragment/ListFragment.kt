@@ -1,5 +1,6 @@
 package com.example.topnews.ui.listfragment
 
+import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
+import androidx.preference.PreferenceManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.topnews.R
 import com.example.topnews.common.logDebug
@@ -62,7 +64,6 @@ class ListFragment : Fragment(), NewsListAdapter.OnItemClickListener {
                 var chosenChip: Chip? = null
                 chipGroup.forEach { if (it.id == checkedId) chosenChip = it as Chip }
                 val section = chosenChip?.text.toString()
-                logDebug("section $section")
                 recyclerView.scrollToPosition(0)
                 viewModel.choseSection(section)
             }
@@ -82,7 +83,7 @@ class ListFragment : Fragment(), NewsListAdapter.OnItemClickListener {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.settings_menu, menu)
+        inflater.inflate(R.menu.night_mode_menu, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -91,18 +92,17 @@ class ListFragment : Fragment(), NewsListAdapter.OnItemClickListener {
                 when (currentNightMode) {
                     Configuration.UI_MODE_NIGHT_NO -> {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-
-                       // item.icon. setImageResource set current(R.drawable.ic_baseline_light_mode_24)
                     }
                     Configuration.UI_MODE_NIGHT_YES -> {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)}
                 }
             }
-
         }
-
         return super.onOptionsItemSelected(item)
     }
+
+
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null

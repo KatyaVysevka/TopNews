@@ -3,13 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2101851851851852" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.2101851851851852" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable/ic_baseline_light_mode_24.xml" value="0.2101851851851852" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.2101851851851852" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2101851851851852" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2101851851851852" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/layout/footer.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/layout/fragment_detail.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/layout/fragment_list.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/layout/item.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/menu/bottom_menu.xml" value="0.2421875" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/menu/night_mode_menu.xml" value="0.2421875" />
         <entry key="..\:/java/projects/TopNews/app/src/main/res/menu/settings_menu.xml" value="0.2421875" />
+        <entry key="..\:/java/projects/TopNews/app/src/main/res/xml/settings.xml" value="0.2421875" />
       </map>
     </option>
   </component>

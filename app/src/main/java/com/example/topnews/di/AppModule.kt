@@ -1,7 +1,5 @@
 package com.example.topnews.di
 
-import android.util.Log
-import androidx.viewbinding.BuildConfig
 import com.example.topnews.api.NewsApi
 import dagger.Module
 import dagger.Provides
@@ -34,7 +32,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit {
-        Log.d("TAGG", "RETROFIT")
         return Retrofit.Builder()
             .baseUrl(NewsApi.BASE_URL)
             .client(client)
@@ -45,8 +42,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideUnsplashApi(retrofit: Retrofit): NewsApi {
-        Log.d("TAGG", "API create")
-
         return retrofit.create(NewsApi::class.java)
     }
 }

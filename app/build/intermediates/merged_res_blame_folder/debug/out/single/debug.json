@@ -4,16 +4,16 @@
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\fragment_list.xml"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_error_outline_24.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_error_outline_24.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_logo.xml.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_logo.xml"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_list_alt_24.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_list_alt_24.xml"
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_error_outline_24.xml.flat",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_error_outline_24.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\menu_night_mode_menu.xml.flat",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\menu\\night_mode_menu.xml"
     },
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\menu_settings_menu.xml.flat",
@@ -44,10 +44,6 @@
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_logo.png"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_collections_bookmark_24.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_collections_bookmark_24.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_logo_round.png.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-mdpi\\ic_logo_round.png"
     },
@@ -72,12 +68,12 @@
         "source": "F:\\java\\projects\\TopNews\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\layout_footer.xml.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\footer.xml"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_logo_foreground.png.flat",
@@ -92,24 +88,16 @@
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_light_mode_24.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_light_mode_24.xml"
-    },
-    {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_menu.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\menu\\bottom_menu.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_logo_foreground.png.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_logo_foreground.png"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\item.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_logo_foreground.png.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-mdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\layout_item.xml.flat",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
@@ -118,6 +106,10 @@
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\xml_settings.xml.flat",
+        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\xml\\settings.xml"
     },
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_logo.png.flat",

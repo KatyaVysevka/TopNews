@@ -11,7 +11,7 @@ public final class ListViewModel extends androidx.lifecycle.ViewModel {
     private final androidx.lifecycle.LiveData<androidx.paging.PagingData<com.example.topnews.domain.data.Results>> news = null;
     @org.jetbrains.annotations.NotNull()
     public static final com.example.topnews.ui.listfragment.ListViewModel.Companion Companion = null;
-    private static final java.lang.String CURRENT_SECTION = "current_query";
+    private static final java.lang.String CURRENT_SECTION = "current_section";
     private static final java.lang.String DEFAULT_SECTION = "home";
     
     @javax.inject.Inject()

@@ -23,7 +23,7 @@ class ListViewModel @Inject constructor(
     }
 
     companion object{
-        private const val CURRENT_SECTION = "current_query"
+        private const val CURRENT_SECTION = "current_section"
         private const val DEFAULT_SECTION = "home"
     }
 }
