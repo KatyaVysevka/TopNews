@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.preference.PreferenceManager
@@ -25,6 +26,7 @@ import com.google.android.material.chip.Chip
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
 
 @OptIn(InternalCoroutinesApi::class)
 @AndroidEntryPoint
@@ -45,8 +47,10 @@ class ListFragment : Fragment(), NewsListAdapter.OnItemClickListener {
         super.onViewCreated(view, savedInstanceState)
         val adapter = NewsListAdapter(this)
 
-        viewModel.news.observe(viewLifecycleOwner) {
-            adapter.submitData(viewLifecycleOwner.lifecycle, it)
+        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+            viewModel.news.collect { data ->
+                adapter.submitData(viewLifecycleOwner.lifecycle, data)
+            }
         }
 
         binding.apply {

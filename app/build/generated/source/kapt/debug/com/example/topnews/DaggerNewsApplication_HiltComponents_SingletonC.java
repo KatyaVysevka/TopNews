@@ -12,7 +12,9 @@ import com.example.topnews.di.AppModule;
 import com.example.topnews.di.AppModule_ProvideRetrofitFactory;
 import com.example.topnews.di.AppModule_ProvideUnsplashApiFactory;
 import com.example.topnews.domain.repository.NewsRepository;
+import com.example.topnews.domain.usecase.NewsUseCase;
 import com.example.topnews.ui.MainActivity;
+import com.example.topnews.ui.detail.DetailFragment;
 import com.example.topnews.ui.listfragment.ListFragment;
 import com.example.topnews.ui.listfragment.ListViewModel;
 import com.example.topnews.ui.listfragment.ListViewModel_HiltModules_KeyModule_ProvideFactory;
@@ -316,7 +318,11 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
         }
 
         @Override
-        public void injectListFragment(ListFragment arg0) {
+        public void injectDetailFragment(DetailFragment arg0) {
+        }
+
+        @Override
+        public void injectListFragment(ListFragment listFragment) {
         }
 
         @Override
@@ -482,8 +488,12 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
 
       }
 
+      private NewsUseCase newsUseCase() {
+        return new NewsUseCase(singletonC.newsRepository());
+      }
+
       private ListViewModel listViewModel() {
-        return new ListViewModel(singletonC.newsRepository(), savedStateHandle);
+        return new ListViewModel(newsUseCase(), savedStateHandle);
       }
 
       private Provider<ListViewModel> listViewModelProvider() {

@@ -2,13 +2,10 @@ package com.example.topnews.ui.detail
 
 import android.content.Intent
 import android.content.SharedPreferences
-import android.content.res.Configuration
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
-import android.util.TypedValue
 import android.view.*
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
@@ -21,9 +18,10 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.topnews.R
 import com.example.topnews.databinding.FragmentDetailBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.item.view.*
 
-
+@AndroidEntryPoint
 class DetailFragment : Fragment() {
     private var _binding: FragmentDetailBinding? = null
     private val binding: FragmentDetailBinding get() = requireNotNull(_binding)

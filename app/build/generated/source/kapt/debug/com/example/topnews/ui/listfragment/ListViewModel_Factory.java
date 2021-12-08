@@ -2,7 +2,7 @@
 package com.example.topnews.ui.listfragment;
 
 import androidx.lifecycle.SavedStateHandle;
-import com.example.topnews.domain.repository.NewsRepository;
+import com.example.topnews.domain.usecase.NewsUseCase;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import javax.inject.Provider;
@@ -13,27 +13,27 @@ import javax.inject.Provider;
     "rawtypes"
 })
 public final class ListViewModel_Factory implements Factory<ListViewModel> {
-  private final Provider<NewsRepository> repositoryProvider;
+  private final Provider<NewsUseCase> newsUseCaseProvider;
 
   private final Provider<SavedStateHandle> stateProvider;
 
-  public ListViewModel_Factory(Provider<NewsRepository> repositoryProvider,
+  public ListViewModel_Factory(Provider<NewsUseCase> newsUseCaseProvider,
       Provider<SavedStateHandle> stateProvider) {
-    this.repositoryProvider = repositoryProvider;
+    this.newsUseCaseProvider = newsUseCaseProvider;
     this.stateProvider = stateProvider;
   }
 
   @Override
   public ListViewModel get() {
-    return newInstance(repositoryProvider.get(), stateProvider.get());
+    return newInstance(newsUseCaseProvider.get(), stateProvider.get());
   }
 
-  public static ListViewModel_Factory create(Provider<NewsRepository> repositoryProvider,
+  public static ListViewModel_Factory create(Provider<NewsUseCase> newsUseCaseProvider,
       Provider<SavedStateHandle> stateProvider) {
-    return new ListViewModel_Factory(repositoryProvider, stateProvider);
+    return new ListViewModel_Factory(newsUseCaseProvider, stateProvider);
   }
 
-  public static ListViewModel newInstance(NewsRepository repository, SavedStateHandle state) {
-    return new ListViewModel(repository, state);
+  public static ListViewModel newInstance(NewsUseCase newsUseCase, SavedStateHandle state) {
+    return new ListViewModel(newsUseCase, state);
   }
 }

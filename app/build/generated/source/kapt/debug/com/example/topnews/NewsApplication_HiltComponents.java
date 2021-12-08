@@ -2,6 +2,7 @@ package com.example.topnews;
 
 import com.example.topnews.di.AppModule;
 import com.example.topnews.ui.MainActivity_GeneratedInjector;
+import com.example.topnews.ui.detail.DetailFragment_GeneratedInjector;
 import com.example.topnews.ui.listfragment.ListFragment_GeneratedInjector;
 import com.example.topnews.ui.listfragment.ListViewModel_HiltModules;
 import dagger.Binds;
@@ -206,7 +207,8 @@ public final class NewsApplication_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements ListFragment_GeneratedInjector,
+  public abstract static class FragmentC implements DetailFragment_GeneratedInjector,
+      ListFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
