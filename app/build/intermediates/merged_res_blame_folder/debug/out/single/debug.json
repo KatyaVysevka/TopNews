@@ -12,10 +12,6 @@
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_error_outline_24.xml"
     },
     {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\menu_night_mode_menu.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\menu\\night_mode_menu.xml"
-    },
-    {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\menu_settings_menu.xml.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\menu\\settings_menu.xml"
     },
@@ -30,10 +26,6 @@
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_logo_round.png.flat",
         "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_logo_round.png"
-    },
-    {
-        "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_dark_mode_24.xml.flat",
-        "source": "F:\\java\\projects\\TopNews\\app\\src\\main\\res\\drawable\\ic_baseline_dark_mode_24.xml"
     },
     {
         "merged": "F:\\java\\projects\\TopNews\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_logo_round.xml.flat",

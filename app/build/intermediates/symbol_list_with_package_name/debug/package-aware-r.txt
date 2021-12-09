@@ -1886,7 +1886,6 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_down_24dp
-drawable ic_baseline_dark_mode_24
 drawable ic_baseline_error_outline_24
 drawable ic_baseline_settings_24
 drawable ic_clock_black_24dp
@@ -2259,7 +2258,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id night_mode
 id noScroll
 id noState
 id none
@@ -2636,7 +2634,6 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
-menu night_mode_menu
 menu settings_menu
 mipmap ic_logo
 mipmap ic_logo_foreground
