@@ -1,7 +1,22 @@
-# TopNews
+<h1>TopNews</h1>
 
-###“Read only important world news”
+“Read only important world news”
 
-##Screenshots
-![Screenshot_2021-12-03-15-31-08-764_com example topnews](https://user-images.githubusercontent.com/31919625/145439300-5b889bbc-038a-4fee-9cfe-332d17876fad.jpg)
-![Screenshot_2021-12-03-15-30-53-595_com example topnews](https://user-images.githubusercontent.com/31919625/145439302-4639257f-6999-42de-a95e-f07c0c7df12a.jpg)
+## Screenshots
+
+<p>
+<img src="screenshot/Screenshot1.jpg" width="250" height="500"/>
+<img src="screenshot/Screenshot2.jpg" width="250" height="500"/>
+</p>
+
+## Technologies
+
+
+- [Kotlin](https://kotlinlang.org/)
+- [MVVM](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
+- [Retrofit](https://square.github.io/retrofit/)
+- [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
+- [Flow](https://developer.android.com/kotlin/flow)
+- [Navigation](https://developer.android.com/guide/navigation)
+- [Glide](https://github.com/bumptech/glide)
