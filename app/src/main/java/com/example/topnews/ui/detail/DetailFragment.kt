@@ -1,16 +1,13 @@
 package com.example.topnews.ui.detail
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.core.view.isVisible
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import androidx.preference.PreferenceManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
@@ -83,36 +80,6 @@ class DetailFragment : Fragment() {
                 paint.isUnderlineText = true
             }
         }
-
-        setHasOptionsMenu(true)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.settings_menu, menu)
-    }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.settings -> findNavController().navigate(R.id.action_detailFragment_to_settingsFragment2)
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
-    var listenerSettings: SharedPreferences.OnSharedPreferenceChangeListener =
-        SharedPreferences.OnSharedPreferenceChangeListener { preference, key ->
-            val value = preference.getString(key, "16sp")
-            when (value) {
-                "14sp" -> binding.textAbstract.textSize = 14F
-                "16sp" -> binding.textAbstract.textSize = 16F
-                "18sp" -> binding.textAbstract.textSize = 18F
-            }
-        }
-
-    override fun onResume() {
-        super.onResume()
-        val preferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        preferences.registerOnSharedPreferenceChangeListener(listenerSettings)
-
     }
 
     override fun onDestroy() {

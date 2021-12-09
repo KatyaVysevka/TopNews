@@ -27,13 +27,10 @@ class NewsPagingSource(private val newsApi: NewsApi, private val section: String
                 nextKey = if (news.results.isEmpty()) null else position + 1
             )
         } catch (exception: IOException) {
-            Log.d("MyLog", exception.message.toString())
             LoadResult.Error(exception)
         } catch (exception: HttpException) {
-            Log.d("MyLog", exception.message.toString())
             LoadResult.Error(exception)
         } catch (exception: Throwable) {
-            Log.d("MyLog", exception.message.toString())
             LoadResult.Error(exception)
         }
 }

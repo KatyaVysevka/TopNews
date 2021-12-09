@@ -1,8 +1,6 @@
 package com.example.topnews.ui.listfragment
 
 import androidx.lifecycle.*
-import androidx.paging.cachedIn
-import com.example.topnews.domain.repository.NewsRepository
 import com.example.topnews.domain.usecase.NewsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.flatMapLatest

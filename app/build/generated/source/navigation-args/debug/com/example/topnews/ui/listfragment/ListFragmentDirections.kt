@@ -2,6 +2,7 @@ package com.example.topnews.ui.listfragment
 
 import android.os.Bundle
 import android.os.Parcelable
+import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
 import com.example.topnews.R
 import com.example.topnews.domain.`data`.Results
@@ -34,5 +35,8 @@ public class ListFragmentDirections private constructor() {
   public companion object {
     public fun actionListFragmentToDetailFragment(news: Results): NavDirections =
         ActionListFragmentToDetailFragment(news)
+
+    public fun actionListFragmentToSettingsFragment(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_listFragment_to_settingsFragment)
   }
 }

@@ -318,7 +318,7 @@ public final class DaggerNewsApplication_HiltComponents_SingletonC extends NewsA
         }
 
         @Override
-        public void injectDetailFragment(DetailFragment arg0) {
+        public void injectDetailFragment(DetailFragment detailFragment) {
         }
 
         @Override

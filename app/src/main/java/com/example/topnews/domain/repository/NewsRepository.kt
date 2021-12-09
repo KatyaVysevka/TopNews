@@ -11,14 +11,15 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class NewsRepository @Inject constructor(private val newsApi: NewsApi):Repository {
+class NewsRepository @Inject constructor(private val newsApi: NewsApi) : Repository {
 
-    private val appScope: CoroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
+    private val appScope: CoroutineScope =
+        CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
     private val map: MutableMap<String, Flow<PagingData<Results>>> = mutableMapOf()
 
 
-    override fun getResults(section: String) : Flow<PagingData<Results>> {
+    override fun getResults(section: String): Flow<PagingData<Results>> {
         val cachedPagerFlow = map[section]
         return if (cachedPagerFlow != null) {
             cachedPagerFlow
